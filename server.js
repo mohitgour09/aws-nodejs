@@ -7,6 +7,18 @@ app.get("/api/get", (req, res) => {
 
 
 
+app.get("/api/get_user_data", (req, res) => {
+  res.send({ 
+    use:{
+        name:"mohit gour",
+        age: 23,
+        phone: 8770550853
+    }
+  });
+});
+
+
+
 
 app.listen(8000,()=>{
     console.log('server is listening to port 8000')
